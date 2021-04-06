@@ -368,13 +368,13 @@ class QuillEditor extends React.Component {
                     <button className="ql-underline" />
                     <button className="ql-strike" />
                     <button className="ql-insertImage">
-                        I
+                        Image
                     </button>
                     <button className="ql-insertVideo">
-                        V
+                        Video
                     </button>
                     <button className="ql-insertFile">
-                        F
+                        File
                     </button>
                     <button className="ql-link" />
                     <button className="ql-code-block" />
