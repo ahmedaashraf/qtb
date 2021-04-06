@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import QuillEditor from "./QuillEditor"
+import axios from 'axios';
+
+
+
 
 function App() {
+
+
+
+  const onEditorChange = (value) => {
+    console.log(value)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ maxWidth: '700px', margin: '2rem auto' }}>
+    <div style={{ textAlign: 'center' }}>
     </div>
+    <QuillEditor
+        placeholder={"Write Here"}
+        onEditorChange={onEditorChange}
+
+
+    />
+
+ 
+</div>
   );
 }
 
